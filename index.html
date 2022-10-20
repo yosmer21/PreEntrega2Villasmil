@@ -12,21 +12,29 @@
     <link rel="stylesheet" href="./estilos/css/estilos.css">
     
 </head>
-<body>
+<body>  
+  <!--INICIO HEADER-->
     <header class="header">
-    <a href="#"><img src="./img/logo.png" alt="logo de la empresa" class="header__logo img-fluid"></a>
-        <nav class="header__nav">
-            <ul class="header__lista">
+      <a href="#"><img class="img-fluid img-logo"src="./img/logo.png" alt="logo de la empresa" class="header__logo"></a>
+        <nav class="navbar navbar-expand-lg header__nav" >
+            <div class="container-fluid">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+            <div class="navbar-collapse justify-content-end collapse" id="navbarNavDropdown" style>
+            <ul class="navbar-nav header__lista">
             <li class="header__item"><a class="header__link-1 header__link-activo" href="#">Inicio</a></li>
             <li class="header__item"><a class="header__link" href="./vistas/empresa.html">Empresa</a></li>
             <li class="header__item"><a class="header__link" href="./vistas/servicios.html">Servicios</a></li>
             <li class="header__item"><a class="header__link" href="./vistas/clientes.html">Clientes</a></li>
             <li class="header__item"><a class="header__link" href="./vistas/contactos.html">Contacto</a></li>
             </ul>
-            
+            </div>
+            </div>
         </nav>
     </header>
 <main>
+  <!--INICIO CAROUSEL-->
     <section class="container-fluid p-0">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -68,6 +76,7 @@
           </div>
 
     </section>
+    <!--INICIO AREA INFO-->
     <section class="container-fluid info__area">
         <div class="row">
         <h1 class="info__tit">Titulo 1</h1>
@@ -85,12 +94,12 @@
     <div class="col-md-12 info3" data-aos="fade-left" data-aos-delay="300">
        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi sunt aliquam cumque saepe ex iusto, non libero, repellat suscipit et. Officia maxime ducimus, consectetur suscipit neque temporibus ut pariatur.</p>
-        <iframe class="info__vid" width="560" height="315" src="https://www.youtube.com/embed/RpN3Zc5fpZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="info__vid" width="500" height="315" src="https://www.youtube.com/embed/RpN3Zc5fpZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>
     </section>
     </main>
-   
+   <!--INICIO FOOTER-->
     <footer class="footer">
         <div class="footer__izq">
             <a href="#"><img  src="./img/logofoot.png" alt="logo de la empresa" class="header__logo"></a>
@@ -103,7 +112,7 @@
             <div>
                 <p><b>+598 99952237</b></p>
             </div>
-            <div>
+            <div class="footer__centro__mail">
                 <p><a href="mailto:villasmil.yosmer@gmail.com">soporte@technosolutions.com</a></p>
             </div>
             <div class="footer__rrss">
@@ -120,6 +129,7 @@
 
         </div>
     </footer>
+    <!--SCRIPT-->
     <script>
         AOS.init();
       </script>

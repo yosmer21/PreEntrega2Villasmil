@@ -179,7 +179,7 @@
 .form__button{
     float:right;
     padding:8px 12px;
-    font-family:'Montserrat',sans-serif;
+    font-family:'verdana',sans-serif;
     border:2px solid #78788c;
     background:0;
     color:#5a5a6e;
@@ -202,10 +202,11 @@
    
 }
 .info__img{
-    max-width: 400px;
+    max-width: 200px;
 }
 .info__vid{
     padding: 1rem;
+    overflow: hidden;
 
 }
 .info1,
@@ -228,12 +229,6 @@
     text-align: center;
     color: rgb(8,162,154);
     padding: 2rem;  
-}
-
-/* MEDIA QUERIES */
-/*HASTA 320px*/
-@media screen and (max-width: 320px) {
-   
 }
 
 /*CLIENTES*/
@@ -274,3 +269,75 @@
 .empresa__info{
     padding: 2rem;
 }
+/*FIN EMPRESA*/
+
+/* MEDIA QUERIES */
+/*HASTA 768px*/
+@media screen and (max-width: 768px) {
+ 
+    .footer{
+    font: bold 0.8rem sans-serif;
+ }
+ .footer__izq,
+ .footer__centro,
+ .footer__der{
+    display: block;
+    width: 100%;
+    margin-bottom: 2.2rem;
+    text-align: center;
+}
+.footer__centro a{
+    overflow: hidden;
+}
+
+.form__cont{
+    display: block;
+    align-items: center;
+   
+}
+.info3{
+    display: block;
+    align-items: center;
+}
+.info__vid{
+    width: 100%;
+    overflow: hidden;
+   }
+
+}
+   /*HASTA 320px*/
+
+@media screen and (max-width:320px){
+    .info1,
+.info2,
+.info3{
+    display:block;
+    padding: 1rem;
+    align-items: center;  
+} 
+.info__vid{
+    width: 100%;
+    overflow: hidden;
+
+}
+.carousel__alto{
+    height: 30vh;
+}
+.carousel__img{
+    object-fit: cover;
+    object-position: center;
+    height: 30vh;
+}
+.footer__centro__mail{
+    overflow: hidden;
+
+}
+.footer__centro__mail p a{
+    font: bold 15px sans-serif;
+}
+
+}
+
+
+
+/*FIN MEDIA QUERIES */

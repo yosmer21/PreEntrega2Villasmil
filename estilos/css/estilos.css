@@ -10,6 +10,9 @@
     justify-content: space-between;
 }
 
+.header__logo{
+    padding: 0.5rem;
+}
 .header__item{
     display: inline-block;
     padding: 1rem 0.5rem;  
@@ -20,6 +23,7 @@
     cursor:pointer; 
     
 }
+
 .header__link:before{
     content: "|";
     font-weight:300;
@@ -50,14 +54,22 @@
 }
 
 /*HEADER FIN*/
-
+/*CAROUSEL*/
+.carousel__alto{
+    height: 60vh;
+}
+.carousel__img{
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+}
 /*FOOTER*/
 
 .footer{
     background:rgb(128,128,128);
     width: 100%;
     text-align: left;
-    padding: 3.3rem 3rem;
+    padding: 3rem 3rem;
     position: absolute;
 }
  .footer__izq,
@@ -127,17 +139,66 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
+    overflow: hidden;
+    padding-bottom: 2rem;
 }
-.form{
-    padding: 5rem;
-}
+.form{width:25rem;
+    height: 28rem;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 2.2rem;
+    padding:1.1rem 2rem;
+    padding-bottom: 1rem;
+    box-sizing:border-box;
+    font-family: verdana}
+  
+.form__tit{margin:0.8rem 0;
+    padding-bottom:0.8rem;
+    color:#78788c;
+    border-bottom:3px solid #78788c}
+  
+  input{width:100%;
+    padding:0.8rem;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'verdana',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2}
+  
+  input:focus{border-bottom:2px solid #78788c}
+  
+.form__item:before{content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:0.9rem;
+    color:#5a5a5a}
+  
+.form__button{
+    float:right;
+    padding:8px 12px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s}
+  
+.form__button:hover{background:#78788c;
+    color:#fff}
+
 .contacto__mapa{
     padding: 5rem;
     display: flex;
 }
+
+/*FIN CONTACTO*/
 /*AREA INFO INDEX*/
 .info__area{
    background-color:#EAf4f4;
+   overflow: hidden;
    
 }
 .info__img{
@@ -172,17 +233,44 @@
 /* MEDIA QUERIES */
 /*HASTA 320px*/
 @media screen and (max-width: 320px) {
-    
+   
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: auto;
-    background-color: blue;
-  
-}
-
+/*CLIENTES*/
 
 .clientes__img{
     max-width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+}
+
+.clientes__info{
+    padding-bottom: 2rem;
+}
+    
+.clientes__titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(8,162,154);
+    padding: 2rem;
+}
+
+/*FIN CLIENTES*/
+/*EMPRESA*/
+.empresa__img{
+  
+    max-width: 12rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    
+}
+.empresa__titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(8,162,154);
+    padding: 2rem;
+}
+.empresa__info{
+    padding: 2rem;
 }

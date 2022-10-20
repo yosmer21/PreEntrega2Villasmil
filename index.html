@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechnoSolutions</title>
     <link rel="shortcut icon" href="./img/logo2.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/css/estilos.css">
+    
 </head>
 <body>
     <header class="header">
-    <a href="#"><img src="./img/logo.png" alt="logo de la empresa" class="header__logo"></a>
+    <a href="#"><img src="./img/logo.png" alt="logo de la empresa" class="header__logo img-fluid"></a>
         <nav class="header__nav">
             <ul class="header__lista">
             <li class="header__item"><a class="header__link-1 header__link-activo" href="#">Inicio</a></li>
@@ -19,32 +23,72 @@
             <li class="header__item"><a class="header__link" href="./vistas/clientes.html">Clientes</a></li>
             <li class="header__item"><a class="header__link" href="./vistas/contactos.html">Contacto</a></li>
             </ul>
+            
         </nav>
     </header>
 <main>
-    <section class="info__area">
+    <section class="container-fluid p-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carousel__alto">
+              <div class="carousel-item active">
+                <img src="./img/carrusel1.jpg" class="d-block w-100 carousel__img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Seguridad</h4>
+                  <p>Mantenemos tu informacion segura y protegida.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrusel2.jpg" class="d-block w-100 carousel__img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Mantenimiento</h4>
+                  <p>Preventivo y correctivo de todos tus equipos.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrusel3.jpg" class="d-block w-100 carousel__img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Diagnostico</h4>
+                  <p>Evaluar el estado de cada componente.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+    <section class="container-fluid info__area">
+        <div class="row">
         <h1 class="info__tit">Titulo 1</h1>
-    <div class="info1">
+    <div class="col-md-12 info1" data-aos="fade-left" data-aos-delay="300">
        <p>ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi beatae, sint delecLoremtus voluptate animi eos, necessitatibus repellendus ratione odio, reiciendis facere id earum debitis laboriosam voluptas quaerat quae vel!
         </p>   
         <img class="info__img" src="./img/fondo1.jpg" alt="fondo1">
     </div>
     <h2 class="info__tit">Titulo 2</h2>
-    <div class="info2">
-       
-        <img class="info__img"src="./img/fondo2.jpg" alt="fondo2">
-        
+    <div class="col-md-12 info2" data-aos="fade-right" data-aos-delay="300">
+       <img class="info__img"src="./img/fondo2.jpg" alt="fondo2">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit error ducimus quasi nesciunt. In quidem ex quod natus! Quas expedita obcaecati ratione sapiente et consequatur reprehenderit, possimus vero cumque alias.</p>
-
-        
     </div>
     <h3 class="info__tit">Titulo 3</h3>
-    <div class="info3">
+    <div class="col-md-12 info3" data-aos="fade-left" data-aos-delay="300">
        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae modi sunt aliquam cumque saepe ex iusto, non libero, repellat suscipit et. Officia maxime ducimus, consectetur suscipit neque temporibus ut pariatur.</p>
         <iframe class="info__vid" width="560" height="315" src="https://www.youtube.com/embed/RpN3Zc5fpZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-</section>
+    </div>
+    </section>
     </main>
    
     <footer class="footer">
@@ -76,6 +120,9 @@
 
         </div>
     </footer>
-    
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

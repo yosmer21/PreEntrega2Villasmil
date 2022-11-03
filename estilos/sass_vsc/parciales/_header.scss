@@ -1,0 +1,35 @@
+@import "./variables";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    &__logo{
+    padding: 0.5rem;
+    }
+
+    &__item{
+    display: inline-block;
+    padding: 1rem 0.5rem;  
+    }
+
+    &__link{
+    font-family: $fuentetext;
+    color:$colortext1;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;  
+        &:hover{
+        cursor:pointer; 
+        color: $colortext;  
+        }
+        &:before{
+        content:"|";
+        padding-right: 1rem;
+        }
+    }
+    &__link-activo{
+    color:rgb(8, 162, 154);
+    }
+    
+}

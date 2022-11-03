@@ -1,0 +1,36 @@
+@import "../parciales/variables";
+
+.info{
+    overflow: hidden;
+    
+
+    &__img{
+     max-width: 200px;
+    }
+    &__vid{
+     padding: 1rem;
+     overflow: hidden;
+ 
+    }
+    &__text1,
+    &__text2,
+    &__text3{
+     display:flex;
+     padding: 3rem;
+     align-items: center;  
+        p{
+        padding: 5rem;
+        text-align: center;
+        
+        }
+
+    }  
+ 
+ 
+    &__tit{
+     font-family: $fuentetext;
+     text-align: center;
+     color: $colortext;
+     padding: 2rem;  
+    }
+}

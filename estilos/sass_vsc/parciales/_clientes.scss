@@ -1,0 +1,18 @@
+@import "../parciales/variables";
+
+.clientes__titulo{
+    font-family: $fuentetext;
+    text-align: center;
+    color: $colortext;
+    padding: 2rem;
+}
+
+.clientes__info{
+    padding-bottom: 2rem;
+   
+}
+.clientes__img{
+    max-width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+}  

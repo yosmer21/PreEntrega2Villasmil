@@ -26,9 +26,6 @@
 
 .header__link:before{
     content: "|";
-    font-weight:300;
-    font-size: 1.5rem;
-    color:negro;
     padding-right: 1rem;
 }
 .header__link{
@@ -38,20 +35,11 @@
     font-weight: 400;
     text-decoration: none;    
 }
-.header__link-1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-decoration: none;    
-}
+
 .header__link-activo{
     color: rgb(8,162,154);
 }
-.header__nav{
-    display: flex;
-    align-items:center;
-}
+
 
 /*HEADER FIN*/
 /*CAROUSEL*/
@@ -196,8 +184,8 @@
 
 /*FIN CONTACTO*/
 /*AREA INFO INDEX*/
-.info__area{
-   background-color:#EAf4f4;
+.info{
+   
    overflow: hidden;
    
 }
@@ -209,16 +197,16 @@
     overflow: hidden;
 
 }
-.info1,
-.info2,
-.info3{
+.info__text1,
+.info__text2,
+.info__text3{
     display:flex;
     padding: 3rem;
     align-items: center;  
 }  
-.info1,
-.info2,
-.info3 p{
+.info__text1,
+.info__text2,
+.info__text3 p{
     padding: 5rem;
     text-align: center;
     

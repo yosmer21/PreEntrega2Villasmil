@@ -1,0 +1,73 @@
+/* MEDIA QUERIES */
+/*HASTA 768px*/
+@media screen and (max-width: 768px) {
+ 
+    .footer{
+    font: bold 0.8rem sans-serif;
+ }
+ .footer__izq,
+ .footer__centro,
+ .footer__der{
+    display: block;
+    width: 100%;
+    margin-bottom: 2.2rem;
+    text-align: center;
+}
+.footer__centro a{
+    overflow: hidden;
+}
+
+.form__cont{
+    display: block;
+    align-items: center;
+   
+}
+.info__text3{
+    display: block;
+    align-items: center;
+}
+.info__vid{
+    width: 100%;
+    overflow: hidden;
+   }
+
+}
+   /*HASTA 320px*/
+
+@media screen and (max-width:320px){
+    .info__text1,
+    .info__text2,
+    .info__text3{
+    display:block;
+    padding: 1rem;
+    align-items: center;  
+} 
+.info__vid{
+    width: 100%;
+    overflow: hidden;
+
+}
+.carousel__alto{
+    height: 30vh;
+}
+.carousel__img{
+    object-fit: cover;
+    object-position: center;
+    height: 30vh;
+}
+.footer__centro__mail{
+    overflow: hidden;
+
+}
+.footer__centro__mail p a{
+    font: bold 15px sans-serif;
+}
+.contacto__mapa{
+    width: 100%;
+    overflow: hidden;
+}
+.form{
+    width: 100%;
+    overflow: hidden;
+}
+}

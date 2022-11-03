@@ -1,0 +1,19 @@
+@import "../parciales/variables";
+
+.empresa__img{
+  
+    max-width: 12rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    
+}
+.empresa__titulo{
+    font-family: $fuentetext;
+    text-align: center;
+    color: $colortext;
+    padding: 2rem;
+}
+.empresa__info{
+    padding: 2rem;
+}

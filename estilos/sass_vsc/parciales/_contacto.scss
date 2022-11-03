@@ -1,0 +1,71 @@
+@import "../parciales/variables";
+
+/*CONTACTO*/
+
+.contacto__titulo{
+    font-family:$fuentetext;
+    text-align: center;
+    color: $colortext;
+    padding: 2rem;
+}
+
+.form__cont{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+.form{width:25rem;
+    height: 28rem;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 2.2rem;
+    padding:1.1rem 2rem;
+    padding-bottom: 1rem;
+    box-sizing:border-box;
+    font-family: verdana}
+  
+.form__tit{margin:0.8rem 0;
+    padding-bottom:0.8rem;
+    color:#78788c;
+    border-bottom:3px solid #78788c}
+  
+  input{width:100%;
+    padding:0.8rem;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'verdana',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2}
+  
+  input:focus{border-bottom:2px solid #78788c}
+  
+.form__item:before{content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:0.9rem;
+    color:#5a5a5a}
+  
+.form__button{
+    float:right;
+    padding:8px 12px;
+    font-family:'verdana',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s}
+  
+.form__button:hover{background:#78788c;
+    color:#fff}
+
+.contacto__mapa{
+    padding: 5rem;
+    display: flex;
+}
+
+/*FIN CONTACTO*/

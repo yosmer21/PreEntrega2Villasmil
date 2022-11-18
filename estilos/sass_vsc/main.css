@@ -5,6 +5,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 .header__logo {
   padding: 0.5rem;
 }
@@ -106,7 +110,7 @@
   overflow: hidden;
 }
 .info__img {
-  max-width: 350px;
+  max-width: 200px;
 }
 .info__vid {
   padding: 1rem;
@@ -144,9 +148,7 @@
 
 .empresa__info {
   padding: 2rem;
-  overflow: hidden;
-  line-height: 2rem;
-  font-size: medium;
+  
 }
 
 .clientes__titulo {
@@ -158,7 +160,6 @@
 
 .clientes__info {
   padding-bottom: 2rem;
-  overflow: hidden;
 }
 
 .clientes__img {
@@ -267,11 +268,12 @@ input:focus {
     overflow: hidden;
   }
   .form__cont {
-    display: grid;
+    display: block;
+    align-items: center;
   }
   .info__text3 {
     display: block;
-    align-content: center;
+    align-items: center;
   }
   .info__vid {
     width: 100%;
@@ -286,9 +288,6 @@ input:focus {
     display: block;
     padding: 1rem;
     align-items: center;
-  }
-  .info__img {
-    max-width: 200px;
   }
   .info__vid {
     width: 100%;

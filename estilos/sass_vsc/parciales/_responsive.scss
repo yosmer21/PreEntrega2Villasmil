@@ -18,13 +18,14 @@
 }
 
 .form__cont{
-    display: block;
-    align-items: center;
-   
+    display:grid;
+    
+    
 }
+
 .info__text3{
     display: block;
-    align-items: center;
+    align-content: center;
 }
 .info__vid{
     width: 100%;
@@ -40,8 +41,14 @@
     .info__text3{
     display:block;
     padding: 1rem;
-    align-items: center;  
+    align-items: center; 
+   
+    
 } 
+
+.info__img{
+    max-width: 200px;
+}
 .info__vid{
     width: 100%;
     overflow: hidden;
